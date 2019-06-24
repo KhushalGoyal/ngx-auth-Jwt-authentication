@@ -1,0 +1,12 @@
+<div class="container login-card" >
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" formControlName="username" placeholder="Enter Username" name="uname" required>
+    
+      <label for="psw"><b>Password</b></label>
+      <input type="password" formControlName="password" placeholder="Enter Password" name="psw" required>
+      <button [class]="loginForm.valid ? 'btn' : 'btn-disable'" type="submit">Login</button>
+    </form>
+
+    <!-- {{loginForm | json}} -->
+</div>
