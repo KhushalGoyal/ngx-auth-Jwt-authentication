@@ -1,7 +1,8 @@
 import { HttpHeaders } from '@angular/common/http';
 import { InitialModels } from 'src/app/model/intial-models';
+import { Injectable } from '@angular/core';
 
-
+@Injectable({providedIn : 'root'})
 export class Utils {
   constructor(){}
 
