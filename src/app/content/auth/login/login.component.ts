@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){
-    this.authService.doLogin(this.loginForm.value).subscribe(ele => {
+    this.authService.login(this.loginForm.value).subscribe(ele => {
       console.log(ele);
       this.route.navigate(['home'])
     })
